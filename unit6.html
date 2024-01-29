@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit6</title>
+    <style>
+            .container {
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .image {
+      float: right;
+    }
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url(img/pink-pastel-background-fubdyima1gpioo62.jpg);
+        }
+
+        header {
+            background-color: rgb(237, 205, 253);
+            padding: 15px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+        button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+        nav {
+            background-color: #666;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            margin: 0 10px;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: rgb(237, 205, 253);
+            color: rgb(0, 0, 0);
+            padding: 10px;
+            text-align: center;
+        }
+    h1 {
+    font-family: Anakotmai Bold, Anakotmai Light, Anakotmai Medium;
+}
+    body p {
+    font-family: Anakotmai Bold, Anakotmai Light, Anakotmai Medium;
+}
+    body,td,th {
+    font-family: "Anakotmai Bold", "Anakotmai Light", "Anakotmai Medium";
+}
+    </style>
+</head>
+
+<body tracingsrc="img/desktop-computer.jpg" tracingopacity="100">
+<header>
+        <h1>หน่วยที่ 6 การประยุกต์ใช้โปรแกรมตารางงาน Microsoft Excel 2010</h1>
+        <p><img src="img/97038_844211.gif" width="400" height="45" alt=""/></p>
+</header>
+
+    <section id="home">
+        <p><strong><img src="img/excel icon.png" width="37" height="32" alt=""/> MS Excel :ประเภทของสูตร</strong></p>
+        <img class="image" src="img/03.gif" width="400">
+      <h3><strong>สูตร</strong>ที่ 1 SUM : การหาผลรวม</h3>
+      <p>SUM ใช้ในการหาผลรวมของตัวเลข SUM(number1, [number2], …) ในวงเล็บ คือช่วงเซลล์ที่มีตัวเลขที่ต้องการหาผลรวม<br>
+      <br>
+      ตัวอย่าง =SUM(A2:A6)</p>
+      <h3>&nbsp;</h3>
+      <h3><strong>สูตร</strong>ที่ 2 SUMIF : การหาผลรวมในช่วงที่กำหนดไว้</h3>
+      <p>SUMIF ใช้ในการหาผลรวมของตัวเลขในช่วงที่กำหนดไว้ SUMIF(range, criteria, [sum_range])<br>
+      <br>
+      range หมายถึง ช่วงเซลล์ที่มีเงื่อนไขที่ระบุใน criteria<br>
+      <br>
+      criteria หมายถึง เงื่อนไขที่ระบุ โดยจะเป็นตัวเลขหรือความข้อความก็ได้<br>
+      <br>
+      [sum_range] หมายถึง ช่วงเซลล์ที่ต้องการให้หาผลรวมตามเงื่อนไขที่เราระบุไว้<br>
+      <br>
+      ตัวอย่างที่ 1 =SUMIF(B2:B11,B4,C2:C11)</p>
+      <p>&nbsp;</p>
+      <h3><strong>สูตร</strong>ที่ 3 AVERAGE : การหาค่าเฉลี่ย</h3>
+      <p>ใช้ในการหาค่าเฉลี่ยของตัวเลข AVERAGE(number1, [number2], …) ในวงเล็บคือ ช่วงเซลล์ที่มีตัวเลขที่ต้องการหาค่าเฉลี่ย<br>
+      <br>
+      ตัวอย่าง =AVERAGE(C2:C11)</p>
+      <p>&nbsp;</p>
+      <h3><strong>สูตร</strong>ที่ 4 MAX/MIN การหาค่าสูงสุด/ต่ำสุด</h3>
+      <p>ใช้ในการหาค่าที่มากที่สุด/น้อยที่สุดของชุดตัวเลข<br>
+      <br>
+      MAX(number1, [number2], …) ในวงเล็บคือ ช่วงเซลล์ที่มีตัวเลขที่ต้องการหาค่าที่มากที่สุด<br>
+      <br>
+      MIN(number1, [number2], …) ในวงเล็บคือ ช่วงเซลล์ที่มีตัวเลขที่ต้องการหาค่าน้อยที่สุด<br>
+      <br>
+      ตัวอย่าง =MIN(C2:C11) กับ =MAX(C2:C11)</p>
+      <p>&nbsp;</p>
+      <h3>สูตรที่ 5 SMALL/LARGE: การหาจำนวนที่มีค่าน้อยที่สุดเป็นอันดับ X หรือ มากที่สุดเป็นอันดับ Y</h3>
+      <p>ใช้ในการหาค่าที่น้อยที่สุดเป็นอันดับ X ของชุดตัวเลข / ค่าที่มากที่สุดเป็นอันดับ Y ของชุดตัวเลข<br>
+      <br>
+      SMALL(array,X) อาร์เรย์หรือช่วงของข้อมูลตัวเลขที่คุณต้องการระบุค่าที่น้อยที่สุด<br>
+      <br>
+      LARGE(array,Y) อาร์เรย์หรือช่วงข้อมูลที่คุณต้องการระบุค่าที่มากที่สุดเป็น</p>
+      <p>&nbsp;</p>
+      <h3><strong>สูตร</strong>ที่ 6 COUNT : การนับจำนวนช่อง ที่มีตัวเลขอยู่</h3>
+      <p>ใช้ในการนับจำนวนเซลล์ที่มีตัวเลขบรรจุอยู่ COUNT(value1, [value2], …) ในวงเล็บคือช่วงเซลล์ที่ต้องการจะนับ<br>
+      <br>
+      ตัวอย่าง =COUNT(A2:A7)</p>
+      <p>&nbsp;</p>
+      <h3><strong>สูตร</strong>ที่ 7 VLOOKUP : การหาข้อมูลโดยอิงจากข้อมูลอีกชุดหนึ่ง</h3>
+      <p>VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])<br>
+      <br>
+      lookup_value หมายถึง ช่องเซลล์ที่เราต้องการใส่ข้อมูลลงไป<br>
+      <br>
+      table_array หมายถึง การเลือกช่วงของข้อมูลจาก column หนึ่ง ถึงอีก column หนึ่ง ที่เราต้องใช้ในการหา<br>
+      <br>
+      col_index_num หมายถึง การเลือกว่าข้อมูลที่เราจะค้นหาอยู่ใน column ที่เท่าไหร่ของ table_array<br>
+      <br>
+      range_lookup มี 2 ค่า ได้แก่<br>
+      <br>
+      TRUE หมายถึง ข้อมูลที่ใส่ลงไปใน lookup_value มีการเรียงจากน้อยไปมาก เช่น 0 , 1 , 2 ,3<br>
+      <br>
+      FALSE : ข้อมูลที่เราจะใส่ลงไปใน lookup_value ไม่ได้เรียงกัน ว่าจะน้อยไปมาก หรือมากไปน้อย<br>
+      <br>
+      ตัวอย่างที่ 1  =VLOOKUP(C13,B2:C11,2,FALSE)</p>
+      <p>&nbsp;</p>
+      <h3><strong>สูตร</strong>ที่ 8 TODAY : การใส่วันที่ปัจจุบัน</h3>
+      <p>TODAY ()<br>
+      <br>
+      () หมายถึง แค่กด Enter ก็จะแสดงลำดับของวันที่ปัจจุบันตามที่ตั้งค่าไว้ใน Control Panel<br>
+      <br>
+      ตัวอย่าง= TODAY () กด Enter</p>
+      <p>&nbsp;</p>
+      <h3><strong>สูตร</strong>ที่ 9 BAHTTEXT : การเปลี่ยนตัวเลขเป็นตัวอักษร</h3>
+      <p>BAHTTEXT (number) เลขในวงเล็บคือ เซลล์ที่มีข้อมูลเป็นตัวเลขที่ต้องการจะเปลี่ยนเป็นตัวอักษร<br>
+      <br>
+      ตัวอย่าง =BAHTTEXT(C13) จะได้ค่าจำนวนเงินเป็นตัวอักษร</p>
+      <p>&nbsp;</p>
+      <h3><strong>สูตร</strong>ที่ 10 DATE : การใส่วันที่ที่ต้องการ</h3>
+      <p>DATE (year, month, day)<br>
+      <br>
+      year, month, day หมายถึง การใส่ ปี เดือน และวันที่ต้องการ โดยจะแสดงผลออกมาในรูปแบบที่ตั้งค่าใน Control Panel<br>
+      <br>
+      ตัวอย่าง =DATE(2019,6,19)</p>
+      <p>&nbsp;</p>
+      <h3><strong>สูตร</strong>ที่ 11 UPPER/LOWER : เปลี่ยนพิมพ์เล็กพิมพ์ใหญ่</h3>
+      <img class="image" src="img/05.gif" width="400">
+      <p>คือ การเปลี่ยนข้อความภาษาอังกฤษเป็นตัวพิมพ์ใหญ่หรือตัวพิมพ์เล็กทั้งหมด<br>
+      <br>
+      UPPER(text) / LOWER(text)<br>
+      <br>
+      text หมายถึง ข้อความที่ต้องการเปลี่ยนเป็นตัวพิมพ์ใหญ่หรือตัวพิมพ์เล็กทั้งหมด<br>
+      <br>
+      ตัวอย่าง =UPPER(A3) หรือ =LOWER(A2)</p>
+      <p>&nbsp;</p>
+      <h3><strong>สูตร</strong>ที่ 12 IF : การทดสอบเงื่อนไขว่าเป็นจริงหรือเท็จ</h3>
+      <p>IF(logical_test, [value_if_true], [value_if_false])<br>
+      <br>
+      logical_test หมายถึง เงื่อนไขที่ต้องการตรวจสอบ<br>
+      <br>
+      value_if_true หมายถึง ค่าที่จะแสดงถ้าเงื่อนไขเป็นจริง<br>
+      <br>
+      value_if_false หมายถึง ค่าที่จะแสดงถ้าเงื่อนไขเป็นเท็จ<br>
+      <br>
+      ตัวอย่างที่ 1 =IF(C2</p>
+      <p>&nbsp;</p>
+      <h3><strong>สูตร</strong>ที่ 13 CONCATENATE : การเชื่อมคำ</h3>
+      <p>CONCATENATE(text1, [text2],…) ในวงเล็บคือ คำที่ต้องการนำมาเชื่อมกัน<br>
+      <br>
+      ตัวอย่าง =CONCATENATE(A2," ",A3)</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p><strong><img src="img/excel icon.png" width="37" height="32" alt=""/> MS Excel :การป้อนสูตร</strong></p>
+      <a href="https://youtu.be/XVNNdjR-q34"></a>
+      <p>&nbsp;</p>
+	  <p>&nbsp;</p>
+		<p><iframe width="560" height="315" src="https://www.youtube.com/embed/D4jd_vYY4Z4?si=isfqLKeWWpq1LlUB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		</p>
+		<p>&nbsp;</p>
+		<p><strong><img src="img/excel icon.png" width="37" height="32" alt=""/> MS Excel :การคำนวณโดยใช้สูตร</strong></p>
+		<p>&nbsp;</p>
+	  <p><iframe width="560" height="315" src="https://www.youtube.com/embed/j5tvUHBsdI8?si=uhYauaGXKCpyP5Qv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+		<p>&nbsp;</p>
+		<p><strong><img src="img/excel icon.png" width="37" height="32" alt=""/> MS Excel ประเภทของFunction ที่ใช้งานบ่อย</strong></p>
+	  <p>&nbsp;</p>
+		<p><iframe width="560" height="315" src="https://www.youtube.com/embed/JYpJXpi2-kk?si=EQg_8VH3OctLnFyW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+		<p>&nbsp;</p>
+		<p><strong><img src="img/excel icon.png" width="37" height="32" alt=""/> MS Excel :การอ้างอิงเซลล์</strong></p>
+		<p>&nbsp;</p>
+		<p><iframe width="560" height="315" src="https://www.youtube.com/embed/epASP-jP6CI?si=3DQWnc4t4yeq6aL6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+		<p>&nbsp;</p>
+		<p><strong><img src="img/excel icon.png" width="37" height="32" alt=""/> MS Excel ข้อผิดพลาดที่อาจจะเกิดขึ้นในการกำหนดฟังค์ชั่นและสูตร</strong></p>
+        <img class="image" src="img/07.gif" width="400">
+		<p>&nbsp;</p>
+		<p><iframe width="560" height="315" src="https://www.youtube.com/embed/bZVT4WAgDH4?si=lqnzEkSKouBfvT2W" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
+		<p>&nbsp;</p>
+		<p>แบบทดสอบหลังเรียน</p>
+
+		<p><img src="img/unit6s.png" width="201"/></p>
+        <center>
+            <a href="unit5.html"><button>ก่อนหน้า</button></a>
+            <a href="unit7.html"><button>หน้าถัดไป</button></a>
+        </center>
+        <br>
+        </section>
+        </a>
+    <footer>
+      <p>วิชาคอมพิวเตอร์และเทคโนโลยีสารสนเทศเพื่องานอาชีพ วอศ.ชพ</p>
+</footer>
+</body>
+
+</html>
